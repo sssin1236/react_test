@@ -1,10 +1,9 @@
 import './css/style.css';
 import {Logo, Menu} from './components/Header.js';
 import Footer from './components/Footer.js';
+import Panels from './components/Panels.js';
 
-const arr = ['Blizzards','Calm','Dusty_Road','Escape','Payday','Retreat','Seasonal','Vespers'];
-const len = arr.length;
-const deg = 360/len;
+
 
 function App() {
   return (
@@ -13,20 +12,7 @@ function App() {
         <Logo />
         <Menu />
 
-          <section>
-          {
-            arr.map((data,index)=>{
-              let style = {transform: `rotate(${deg*index}deg)`}
-              return (
-                <article key={index} style={style}>
-                  <div className="inner">
-                    <h2>{data}</h2>
-                  </div>
-                </article>
-              )
-            })
-          }
-          </section>
+        <Panels />
 
         <Footer />
       </figure>
