@@ -3,10 +3,15 @@ const len = arr.length;
 const deg = 360/len;
 const path = process.env.PUBLIC_URL;
 
+const changeArr =txt=>{
+  arr[0] = txt;
+  console.log(arr);
+}
+
 function Panels(){
   return (    
     <>
-      <button>button</button>
+      <button onClick={()=>changeArr("Escape")}>button</button>
       <section>
       {
         arr.map((data,index)=>{
