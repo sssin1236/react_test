@@ -57,10 +57,23 @@ figure {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-content: center;
+        flex-wrap: wrap; }
+        figure section article .inner .pic {
+          width: 200px;
+          height: 200px;
+          overflow: hidden;
+          border-radius: 50%;
+          margin-bottom: 30px; }
+          figure section article .inner .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
         figure section article .inner h2 {
           font: 24px/1 "arial";
-          color: #777; }
+          color: #777;
+          width: 100%;
+          text-align: center; }
   figure > p {
     position: absolute;
     bottom: 7vh;
