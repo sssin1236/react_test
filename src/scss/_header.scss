@@ -1,0 +1,14 @@
+h1 {
+  position: absolute; top: 7vh; left: 4vw; font-size: 0;
+
+  strong {
+    font: 36px/1 "arial"; color: #fff; letter-spacing: 1px;
+  }
+  span {
+    font: 12px/1 "arial"; color: #fff; letter-spacing: 2px; opacity: 0.8;
+  }
+} 
+
+.menu {
+  position: absolute; top: 8vh; right: 4vw; font-size: 24px; color: #fff;
+}
