@@ -15,10 +15,6 @@ useState()함수 호출 수 인수로 관리할 테이터 값을 넣어서 실�
 첫번째 배열값 - state로 관리되는 값
 두번째 배열값 - 해당 state를 변경할 수 있는 함수
 state 값은 무조건 state 변경함수를 통해서면 변경가능(재 랜더링 가능)
-*/
-
-function Panels(){
-  let [names, setNames] = useState(arr);
 
   const changeState=()=>{
     // 기존의 전개 연산자를 이용해서 새로운 배열로 복사
@@ -28,9 +24,13 @@ function Panels(){
     //setNames라는 state 변경 전용함수로 위에서 복사한 배열값으로 기존 state 값을 바꿔치기
     setNames(newArr);
   }
+*/
+
+function Panels(){
+  let [names, setNames] = useState(arr);
+
   return (    
     <>
-      <button onClick={changeState}>button</button>
       <section>
       {
         names.map((data,index)=>{

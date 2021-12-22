@@ -2,10 +2,13 @@ import './css/style.css';
 import {Logo, Menu} from './components/Header.js';
 import Footer from './components/Footer.js';
 import Panels from './components/Panels.js';
+import Btns from './components/Btns.js';
 
-
+const deg = 45;
 
 function App() {
+  
+
   return (
     <div className="App">
       <figure>
@@ -13,6 +16,7 @@ function App() {
         <Menu />
 
         <Panels />
+        <Btns />
 
         <Footer />
       </figure>
