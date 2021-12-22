@@ -3,19 +3,19 @@ import { useState } from "react";
 
 const deg = 45;
 
-function Btns(){
+function Btns(props){
     let [num, setNum] = useState(0);
 
-    function plus(e){
+    function plus(){
         setNum(++num);
-        const frame = e.currentTarget.closest("figure").querySelector("section");
-        frame.style.transform = `rotate(${deg*num}deg)`;
+        //const frame = e.currentTarget.closest("figure").querySelector("section");
+        props.frame.current.style.transform = `rotate(${deg*num}deg)`;
     }
 
-    function minus(e){
+    function minus(){
         setNum(--num);
-        const frame = e.currentTarget.closest("figure").querySelector("section");
-        frame.style.transform = `rotate(${deg*num}deg)`;
+        //const frame = e.currentTarget.closest("figure").querySelector("section");
+        props.frame.current.style.transform = `rotate(${deg*num}deg)`;
     }
     return(
         <>

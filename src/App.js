@@ -3,11 +3,10 @@ import {Logo, Menu} from './components/Header.js';
 import Footer from './components/Footer.js';
 import Panels from './components/Panels.js';
 import Btns from './components/Btns.js';
-
-const deg = 45;
+import { useRef } from 'react';
 
 function App() {
-  
+  let frame = useRef(null);
 
   return (
     <div className="App">
@@ -15,8 +14,11 @@ function App() {
         <Logo />
         <Menu />
 
-        <Panels />
-        <Btns />
+        <section ref={frame}>
+          <Panels />
+        </section>
+
+        <Btns frame={frame} />
 
         <Footer />
       </figure>
